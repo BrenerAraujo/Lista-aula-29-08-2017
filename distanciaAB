@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+#include<locale.h>
+
+int main(){
+    float distanciaAB, x1, x2, y1, y2;
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("Digite dois pontos para que a distância Euclidiana entre eles sejam calculadas.");
+    printf("\n\nDigite a coordenada x do ponto A --> ");
+    scanf("%f", &x1);
+    printf("\nAgora digite a coordenada y do ponto A --> ");
+    scanf("%f", &y1);
+    printf("\n\nAgora digite a coordenada x do ponto B --> ");
+    scanf("%f", &x2);
+    printf("\nDigite a coordenada y do ponto B --> ");
+    scanf("%f", &y2);
+
+    distanciaAB = sqrt(pow((y2 - y1), 2) + pow((x2 - x1), 2));
+
+    printf("\n\n\nA distância Euclidiana entre A e B é %f", distanciaAB);
+}
