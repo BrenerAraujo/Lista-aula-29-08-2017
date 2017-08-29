@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<locale.h>
+
+int main(){
+    int salario, prestacao;
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("Digite o valor do seu salário --> ");
+    scanf("%d", &salario);
+    printf("\n\nDigite o valor da prestação -- > ");
+    scanf("%d", &prestacao);
+
+    if(prestacao > salario / 5){
+        printf("\n\n\nEmpréstimo não será concedido.");
+    }
+    else{
+        printf("\n\n\nO empréstimo será concedido.");
+    }
+}
