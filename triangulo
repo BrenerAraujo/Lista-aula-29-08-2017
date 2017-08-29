@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<locale.h>
+
+int main(){
+    int a, b, c;
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("Digite 3 números na mesma medida para ver se os 3 juntos formam um triângulo");
+    printf("\nLado 1 --> ");
+    scanf("%d", &a);
+    printf("\nLado 2 --> ");
+    scanf("%d", &b);
+    printf("\nLado 3 --> ");
+    scanf("%d", &c);
+
+    if(a > b + c){
+        printf("\n\n\nAs medidas informadas não formam um triângulo.");
+    }
+    else{
+        if(b > a + c){
+            printf("\n\n\nAs medidas informadas não formam um triângulo.");
+        }
+        else{
+            if(c > a + b){
+                printf("\n\n\nAs medidas informadas não formam um triângulo.");
+            }
+            else{
+                printf("\n\n\nAs medidas informadas formam um triângulo.");
+            }
+        }
+    }
+}
